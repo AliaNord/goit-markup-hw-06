@@ -2,7 +2,9 @@
   padding: 0;
   margin: 0;
 }
-
+img {
+  display: block;
+}
 body {
   max-width: 1440px;
   background-color: #fff;
@@ -11,19 +13,23 @@ body {
   margin: 0 auto; 
 }
 /* HEADER */
+.header {
+  border-bottom: 1px solid #E7E9FC;
+}
 .container__header {
   padding: 24px 156px;
   display: flex;
   justify-content: space-between;
-  border-bottom: #E7E9FC 1px solid;
+  
 }
 .container {
   width: 1158px;
+  margin: 0 auto;
 }
 .nav_container {
   display: flex;
   justify-content: space-between;
-  gap: 76px;
+  align-items: center;
 }
 .nav_logo {
   color: #4d5ae5;
@@ -34,6 +40,7 @@ body {
   letter-spacing: 0.54px;
   text-transform: uppercase;
   text-decoration: none;
+  margin-right: 76px
 }
 .nav_logo-span {
   color: #2e2f42;
@@ -50,6 +57,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.32px;
   list-style-type: none;
+  padding: 24px 0;
 }
 .nav_link {
   color: #2e2f42;
@@ -93,7 +101,7 @@ address {
 
 /* solutions container */
 .section {
-  padding: 120px 0;
+  padding: 188px 0;
 }
 .solutions_container {
   background-color: #2e2f42;
@@ -101,7 +109,6 @@ address {
   justify-content: center;
 }
 .container__solutions {
-  padding: 68px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -114,7 +121,7 @@ address {
   font-style: normal;
   font-weight: 700;
   line-height: 1.07;
-  width: 496px;
+  max-width: 496px;
   letter-spacing: 1.12px;
   margin-bottom: 48px;
 }
@@ -130,7 +137,7 @@ address {
   line-height: 1.5;
   letter-spacing: 0.64px;
   cursor: pointer;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
 }
 .solutions_button:hover {
@@ -150,11 +157,24 @@ address {
   justify-content: space-between;
   gap: 24px;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .container__advantages {
   display: flex;
 }
 .advantages_item {
   list-style-type: none;
+  width: calc((100% - 72px) / 4)
 }
 .advantages_item-title {
   color: #2e2f42;
@@ -200,7 +220,12 @@ address {
     justify-content: space-between;
     gap: 24px;
 }
+.our-team_item-description {
+  padding: 32px 0;
+}
 .our-team_item {
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
     background-color: #fff;
     list-style-type: none;
 }
@@ -212,14 +237,12 @@ address {
     letter-spacing: 0.02em;
     text-align: center;
     margin-bottom: 8px;
-    padding-top: 32px;
 }
 .our-team_item-text {
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
     color: #434455;
-    padding-bottom: 32px;
 }
 /* portfolio container */
 
@@ -244,18 +267,23 @@ address {
     display: flex;
     gap: 24px;
     justify-content: space-between;
+    row-gap: 48px;
 }
 .portfolio_item {
     list-style-type: none;
-    margin-bottom: 48px;
+    width: calc((100% - 48px) / 3);
 }
+.portfolio_item-description {
+  padding: 32px 16px;
+}
+
 .portfolio_item-title {
     color: #2e2f42;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.4px;
-    padding: 32px 16px 8px 16px;
+    margin-bottom: 8px;
 }
 .portfolio_item-text {
     color: #434455;
@@ -273,12 +301,8 @@ address {
     justify-content: center;
     padding: 100px 0;
 }
-.container__footer {
-  display: flex;
-  flex-direction: column;
-  gap: 17.5px;
-}
 .footer_logo {
+  display: inline-block;
     color: #4D5AE5;
     font-family: Raleway,sans-serif;
     font-size: 18px;
@@ -287,6 +311,7 @@ address {
     letter-spacing: 0.54px;
     text-transform: uppercase;
     text-decoration: none;
+    margin-bottom: 16px;
 }
 .footer_logo-span {
     color: #F4F4FD;

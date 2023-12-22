@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -57,7 +61,7 @@
       </section>
       <section class="advantages_container section">
         <div class="container__advantages container">
-          <h2 hidden class="advantages_title">Our advantages</h2>
+          <h2 class="advantages_title visually-hidden">Our advantages</h2>
           <ul class="advantages_list">
             <li class="advantages_item">
               <h3 class="advantages_item-title">Strategy</h3>
@@ -102,8 +106,10 @@
                 height="260"
                 class="our-team_item-pic"
               />
-              <h3 class="our-team_item-title">Mark Guerrero</h3>
-              <p class="our-team_item-text">Product Designer</p>
+              <div class="our-team_item-description">
+                <h3 class="our-team_item-title">Mark Guerrero</h3>
+                <p class="our-team_item-text">Product Designer</p>
+              </div>
             </li>
             <li class="our-team_item">
               <img
@@ -113,8 +119,10 @@
                 height="260"
                 class="our-team_item-pic"
               />
-              <h3 class="our-team_item-title">Tom Ford</h3>
-              <p class="our-team_item-text">Frontend Developer</p>
+              <div class="our-team_item-description">
+                <h3 class="our-team_item-title">Tom Ford</h3>
+                <p class="our-team_item-text">Frontend Developer</p>
+              </div>
             </li>
             <li class="our-team_item">
               <img
@@ -124,8 +132,10 @@
                 height="260"
                 class="our-team_item-pic"
               />
-              <h3 class="our-team_item-title">Camila Garcia</h3>
-              <p class="our-team_item-text">Marketing</p>
+              <div class="our-team_item-description">
+                <h3 class="our-team_item-title">Camila Garcia</h3>
+                <p class="our-team_item-text">Marketing</p>
+              </div>
             </li>
             <li class="our-team_item">
               <img
@@ -135,8 +145,10 @@
                 height="260"
                 class="our-team_item-pic"
               />
-              <h3 class="our-team_item-title">Daniel Wilson</h3>
-              <p class="our-team_item-text">UI Designer</p>
+              <div class="our-team_item-description">
+                <h3 class="our-team_item-title">Daniel Wilson</h3>
+                <p class="our-team_item-text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
