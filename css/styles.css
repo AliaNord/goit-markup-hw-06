@@ -25,6 +25,7 @@ body {
 .container {
   width: 1158px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 .nav_container {
   display: flex;
@@ -52,12 +53,12 @@ body {
   gap: 40px;
 }
 .nav_item {
+  padding: 24px 0;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.32px;
   list-style-type: none;
-  padding: 24px 0;
 }
 .nav_link {
   color: #2e2f42;
@@ -151,6 +152,7 @@ address {
 .advantages_container {
   display: flex;
   justify-content: center;
+  padding: 120px 0;
 }
 .advantages_list {
   display: flex;
@@ -199,6 +201,7 @@ address {
   background-color: #f4f4fd;
   display: flex;
   justify-content: center;
+  padding: 120px 0;
 }
 .container__our-team {
   display: flex;
@@ -249,6 +252,7 @@ address {
 .portfolio_container {
  display: flex;
  justify-content: center;
+padding: 120px 0;
 }
 .portfolio_title {
     color: #2e2f42;
