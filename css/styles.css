@@ -314,6 +314,7 @@ address {
   background-color: #31D0AA;
 }
 .socials-icon  {
+  
   position: absolute;
   top: 50%;
   left: 50%;
@@ -420,11 +421,20 @@ padding: 120px 0;
 .container__footer {
   display: flex;
   gap: 120px;
+  align-items: baseline
 }
 
 .footer_socials-container  {
   display: flex;
   gap: 16px;
+}
+.footer_socials-box {
+  width: 40px;
+  height: 40px;
+
+}
+.footer_logo-desc {
+  margin-right: 120px
 }
 .social-media_text {
   color:  #FFF;
