@@ -15,6 +15,9 @@ body {
 /* HEADER */
 .header {
   border-bottom: 1px solid #E7E9FC;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .container__header {
   padding: 0 156px;
@@ -51,6 +54,21 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 40px;
+}
+.active {
+  position: relative;
+  color: #404bbf;
+
+}
+.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .nav_item {
   font-size: 16px;
@@ -97,6 +115,7 @@ address {
   line-height: 1.5;
   letter-spacing: 0.32px;
   text-decoration: none;
+  transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address_link:hover {
   color: #404bbf;
@@ -111,12 +130,13 @@ address {
   padding: 188px 0;
 }
 .solutions_container {
-  background-image: linear-gradient(rgba(46, 47, 66, 0.70),rgba(46, 47, 66, 0.70)), url(/images/people-office.png);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.70),rgba(46, 47, 66, 0.70)), url(/images/people-office.jpg);
     background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
   display: flex;
   justify-content: center;
+  max-width: 1440px;
 }
 .container__solutions {
   display: flex;
@@ -149,6 +169,7 @@ address {
   cursor: pointer;
   min-width: 169px;
   height: 56px;
+  transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .solutions_button:hover {
   background-color: #404BBF;
@@ -182,6 +203,9 @@ address {
 }
 .container__advantages {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
 }
 .advantages_item-icon-box {
   border-radius: 4px;
@@ -311,6 +335,10 @@ padding: 120px 0;
     font-style: normal;
     margin-bottom: 72px; 
 }
+.porfolio_image-container {
+  position: relative;
+  overflow: hidden;
+}
 .portfolio_item-description {
   border: 1px solid #E7E9FC;
   border-top: none;
@@ -329,6 +357,7 @@ padding: 120px 0;
     width: calc((100% - 48px) / 3);
     z-index: 10;
     cursor: pointer;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio_item:hover {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -352,8 +381,8 @@ padding: 120px 0;
   line-height: 1.5;
   letter-spacing: 0.32px;
 }
-.portfolio_item:hover .portfolio_item-pic-hover  {
-  transform: translateY(0);
+.portfolio_item:hover .portfolio_item-pic-hover-text  {
+  transform: translateY(0%);
 }
 .portfolio_item-description {
   position: relative;
