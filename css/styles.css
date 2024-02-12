@@ -527,14 +527,14 @@ address {
 .sub-container {
   display: flex;
   flex-direction: column;
-  gap: 16px;
 }
 .sub-text {
   color: #FFF;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
-    letter-spacing: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px
 }
 .subscribe-field  {
   display: flex;
