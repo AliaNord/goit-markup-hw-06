@@ -6,7 +6,6 @@ img {
   display: block;
 }
 body {
-  max-width: 1440px;
   background-color: #fff;
   font-family: Roboto, sans-serif;
   color: #434455;
@@ -140,6 +139,7 @@ address {
   display: flex;
   justify-content: center;
   max-width: 1440px;
+  margin: 0 auto;
 }
 .container__solutions {
   display: flex;
