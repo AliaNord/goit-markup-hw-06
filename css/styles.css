@@ -310,11 +310,13 @@ address {
 }
 
 @media screen and (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .solutions_container {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)),
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
       url(../images/hero-bg-mob-2x.jpg);
   }
 }
@@ -1112,9 +1114,9 @@ max-width: 248px; */
     margin: 0 auto;
     padding: 8px 0;
   }
-    .nav_link {
-      padding: 20px 0;
-    }
+  .nav_link {
+    padding: 20px 0;
+  }
 
   .address_list {
     display: block;
@@ -1140,33 +1142,45 @@ max-width: 248px; */
     display: none;
   }
   /* solutions container */
-            .solutions_container {
-              background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                  rgba(46, 47, 66, 0.7)),
-                url(../images/hero-bg-tab-1x.jpg);
-                max-width: 768px;
-                padding: 112px 0;
-                height: 436px;
-            }
-      
-            @media screen and (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-              .solutions_container {
-                background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                    rgba(46, 47, 66, 0.7)),
-                  url(../images/hero-bg-tab-2x.jpg);
-              }
-            }
-                        
-                        .solutions_title {
-                          font-size: 56px;
-                          line-height: 1.07;
-                          letter-spacing: 1.12px;
-                          max-width: 496px;
-                          margin-bottom: 36px;
+  .solutions_container {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-tab-1x.jpg);
+    max-width: 768px;
+    padding: 112px 0;
+    height: 436px;
+  }
 
-                        }
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .solutions_container {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg-tab-2x.jpg);
+    }
+  }
+  .container__solutions {
+    max-width: 1158px;
+    height: 120px;
+    padding: 0 15px;
+  }
+
+ 
+  .solutions_title {
+    text-align: center;
+      max-height: 120px;
+      margin: 0 auto;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 1.12px;
+    max-width: 496px;
+    margin-bottom: 36px;
+  }
   /* advantages container */
   .advantages_list {
     column-gap: 24px;
@@ -1236,17 +1250,16 @@ max-width: 248px; */
 @media screen and (min-width: 1158px) {
   /* HEADER */
 
-
   .container__header {
     margin: 0 auto;
   }
   .nav_container {
-padding: 24px 0;
+    padding: 24px 0;
   }
-    .container {
-      width: 1440px;
-      padding: 0 15px;
-    }
+  .container {
+    width: 1440px;
+    padding: 0 15px;
+  }
   .nav_list {
     display: flex;
     flex-direction: row;
@@ -1254,11 +1267,11 @@ padding: 24px 0;
     gap: 40px;
     margin-bottom: 0;
   }
-.address_container {
-padding: 24px 0;
-  justify-content: center;
-  align-items: center;
-}
+  .address_container {
+    padding: 24px 0;
+    justify-content: center;
+    align-items: center;
+  }
   .address_list {
     flex-direction: row;
     display: flex;
@@ -1273,10 +1286,10 @@ padding: 24px 0;
   .address_link {
     color: #434455;
     font-size: 16px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 1.5;
-      letter-spacing: 0.32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
   }
 
   .burger-icon {
@@ -1299,35 +1312,41 @@ padding: 24px 0;
   }
 
   /* solutions container */
+  .solutions_container {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-1x.jpg);
+    padding: 188px 0;
+    max-width: 1440px;
+    height: 600px;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .solutions_container {
-      background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)),
-          url(../images/hero-bg-1x.jpg);
-          padding: 188px 0;
-          max-width: 1440px;
-          height: 600px;
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg-2x.jpg);
     }
-    @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      .solutions_container {
-          background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-              rgba(46, 47, 66, 0.7)),
-            url(../images/hero-bg-2x.jpg);
-        }
-    }
-    .container__solutions {
-      max-width: 1158px;
-      height: 120px;
-        padding: 0 15px;
-    }
-    .solutions_title {
-      text-align: center;
-      width: 496px;
-      font-size: 56px;
-      line-height: 1.07;
-      max-height: 160px;
-      margin: 0 auto;
-      margin-bottom: 48px;
-    }
+  }
+  .container__solutions {
+    max-width: 1158px;
+    height: 120px;
+    padding: 0 15px;
+  }
+  .solutions_title {
+    text-align: center;
+    width: 496px;
+    font-size: 56px;
+    line-height: 1.07;
+    max-height: 160px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+  }
   /* advantages container */
   .advantages_list {
     gap: 24px;
